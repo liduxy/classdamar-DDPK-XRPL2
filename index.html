@@ -159,13 +159,13 @@
                 <li><i class="fas fa-check-circle text-success me-2"></i> Minimal <strong>3 halaman</strong></li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Stack: <strong>HTML5, CSS, Bootstrap, PHP</strong></li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Minimal <strong>3 function PHP custom</strong></li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Wajib pakai <strong>if-else</strong></li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>  pakai <strong>if-else</strong></li>
               </ul>
             </div>
             <div class="col-12 col-sm-6">
               <ul class="list-unstyled mb-0 text-muted">
                 <li><i class="fas fa-check-circle text-success me-2"></i> Data pakai <strong>Array PHP</strong></li>
-                <li><i class="fas fa-check-circle text-success me-2"></i> Wajib ada <strong>form input</strong></li>
+                <li><i class="fas fa-check-circle text-success me-2"></i>  ada <strong>form input</strong></li>
                 <li><i class="fas fa-check-circle text-success me-2"></i> Desain <strong>responsif</strong></li>
                 <li><i class="fas fa-star text-warning me-2"></i> Fitur/logika tambahan = <strong>Nilai Bonus</strong></li>
               </ul>
@@ -202,7 +202,7 @@
       { id: 5, title: "Sistem Perpustakaan Sekolah", members: ["FARDHAN ARDIANSYAH", "SYAILA HERDIANA PUTRI", "MAIDA WAROKA", "MUHAMMAD FAJAR MAULANA"], pages: ["Daftar Buku Tersedia", "Form Peminjaman Buku", "Buku yang Sedang Dipinjam"], features: ["Cek stok buku", "Proses peminjaman", "Riwayat peminjaman"], vars: ["$isbn", "$judul_buku", "$nis", "$nama", "$tanggal_pinjam", "$data_buku"], funcs: ["pinjamBuku()", "cekStokBuku()", "tampilkanBukuDipinjam()"] },
       { id: 6, title: "Sistem Manajemen UKS", members: ["NAZWA ZAZQIAH", "RAKA FAIRUZ FERDIANSYAH", "AKBAR MAULANA", "KHARISA AMELIA PUTRI SUDIANA"], pages: ["Dashboard UKS", "Form Pencatatan Kunjungan Siswa", "Riwayat Kunjungan Siswa"], features: ["Pencatatan kunjungan", "Status penanganan", "Rekap harian"], vars: ["$nis", "$nama", "$keluhan", "$tanggal", "$status", "$data_uks"], funcs: ["catatKunjunganUKS()", "cekStatusSiswaUKS()", "tampilkanRekapHarian()"] },
       { id: 7, title: "Sistem Pemesanan Makanan Kantin", members: ["MAHARDIKA RAHMAT", "INA SITI AROFAH", "LINDA RAHMAWATI", "DIAN ANDRIANA", "MUHAMAD SOFHA RAMDHANI"], pages: ["Menu Kantin", "Form Pemesanan", "Daftar Pesanan & Status"], features: ["Pemesanan makanan", "Hitung total", "Update status pesanan"], vars: ["$items", "$nama_menu", "$harga", "$jumlah", "$total", "$data_pesanan"], funcs: ["hitungTotalPesanan()", "buatPesanan()", "updateStatusPesanan()"] },
-      { id: 8, title: "Manajemen Tugas & Pengumpulan PR", members: ["MOMON ABDURAHMAN"], pages: ["Dashboard Tugas", "Form Input Tugas Baru", "Form Pengumpulan Tugas & Riwayat"], features: ["Input tugas", "Pengumpulan tugas siswa", "Validasi tenggat waktu"], vars: ["$id_tugas", "$judul", "$deskripsi", "$tenggat_waktu", "$nis", "$file"], funcs: ["tambahTugas()", "kumpulkanTugas()", "cekStatusTenggat()"] }
+      // { id: 8, title: "Manajemen Tugas & Pengumpulan PR", members: ["MOMON ABDURAHMAN"], pages: ["Dashboard Tugas", "Form Input Tugas Baru", "Form Pengumpulan Tugas & Riwayat"], features: ["Input tugas", "Pengumpulan tugas siswa", "Validasi tenggat waktu"], vars: ["$id_tugas", "$judul", "$deskripsi", "$tenggat_waktu", "$nis", "$file"], funcs: ["tambahTugas()", "kumpulkanTugas()", "cekStatusTenggat()"] }
     ];
 
     function renderGroups() {
@@ -234,7 +234,7 @@
                     </ul>
                   </div>
                   <div class="col-12 col-md-8">
-                    <h5 class="section-title"><i class="fas fa-file-code me-2"></i> Halaman Wajib</h5>
+                    <h5 class="section-title"><i class="fas fa-file-code me-2"></i> Halaman </h5>
                     <div class="mb-2 text-break">
                       ${g.pages.map(p => `<span class="badge-pill">${p}</span>`).join('')}
                     </div>
@@ -246,13 +246,13 @@
 
                     <div class="row mt-2">
                       <div class="col-12 col-lg-6">
-                        <h5 class="section-title"><i class="fas fa-database me-2"></i> Variabel Wajib</h5>
+                        <h5 class="section-title"><i class="fas fa-database me-2"></i> Variabel </h5>
                         <div>
                           ${g.vars.map(v => `<code class="code-tag">${v}</code>`).join('')}
                         </div>
                       </div>
                       <div class="col-12 col-lg-6">
-                        <h5 class="section-title"><i class="fas fa-code me-2"></i> Function Wajib</h5>
+                        <h5 class="section-title"><i class="fas fa-code me-2"></i> Function </h5>
                         <div>
                           ${g.funcs.map(f => `<code class="code-tag">${f}</code>`).join('')}
                         </div>
